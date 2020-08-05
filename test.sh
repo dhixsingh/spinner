@@ -1,5 +1,5 @@
-# source <(curl -s url-to-spin.sh)
-source $(dirname "$0")/spin.sh
+source /dev/stdin <<< "$(curl -s https://raw.githubusercontent.com/dhixsingh/spinner/master/spin.sh)"
+# source $(dirname "$0")/spin.sh
 
 spinon "Running a slow process now (grab a $_cuppa)"
 sleep 2
